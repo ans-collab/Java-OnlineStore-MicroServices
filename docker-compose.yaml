@@ -1,0 +1,12 @@
+services:
+  user-service:
+    build: ./user-service
+    ports:
+    - "8080:8080"
+    container_name: user-service
+
+  order-service:
+    build: ./order-service
+    ports:
+    - "8081:8080"
+    container_name: order-service
